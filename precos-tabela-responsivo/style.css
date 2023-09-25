@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    text-align: center;
+    line-height: 4rem;
+    background-color: rgb(33, 146, 10);
+    text-transform: capitalize;
+    margin: 2rem 0 2rem 0;
+}
+
+.col { 
+    width: 30vw;
+    float: left;
+    margin: 0 .5rem ;
+}
+
+.price-box {
+    background-color: #fffffff3;
+    color: #333;
+    border: 1px solid #555;
+    list-style-type: none;
+}
+
+.price-box .header {
+    background-color: #111;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.header.header-green {
+    background-color: #07b60d;
+}
+
+.price-box li {
+    padding: 20px;
+    text-align: center;
+}
+
+.price-box li a.btn {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+.price-box li a.btn:hover{
+    background-color: #065909;
+}
+
+@media(max-width: 768px) {
+    .col { 
+        width: 100vw;
+    }
+    header {
+        background-color: rgb(32, 163, 6);
+    }
+}
+
+@media (max-width: 576px){
+    header {
+        list-style: 2.5rem;
+    }
+    .price-box li a.btn {
+        font-size: 0.7rem;
+    }
+}
+
+@media print {
+    .col {
+        height: 100vh;
+    }
+    .price-box li a.btn {
+        display: none;
+    }
+    .price-box li {
+        padding: 10px 20px;
+        border-bottom: 10px solid #5e5b5b;
+    }
+}
+
+.col:hover {
+     box-shadow: 0 0 12px 12px;
+}
+
+ 
